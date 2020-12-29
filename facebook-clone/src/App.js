@@ -5,7 +5,7 @@ import { useStateValue } from './contexts/UserContext';
 import Login from './pages/Login/Login';
 
 function App() {
-  const [{ user }, dispatch] = useStateValue();
+  const [{ user }] = useStateValue();
   const content = user ?
     <>
       <Header />
