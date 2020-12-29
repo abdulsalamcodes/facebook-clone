@@ -1,0 +1,6 @@
+.main_body {
+    display: flex;
+    min-height: 100vh;
+    background-color: rgb(240, 242, 245);
+    position: relative;
+}

@@ -1,0 +1,106 @@
+:root {
+    --facebook-color: #2e81f4;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+    padding: 0 2rem;
+    position: sticky;
+    z-index: 9999;
+    top: 0;
+    height: 60px;
+    background-color: white;
+    
+}
+
+.header__middle, .header__right, .header__left {
+    display: flex;
+    align-items: center;
+}
+
+.header__left img {
+    margin-right: 10px;
+}
+
+.header__input {
+    border-radius: 50px;
+    display: flex;
+    background-color: rgb(240, 242, 245);
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.header__input input {
+    border: none;
+    padding: .6rem 1rem .6rem .5rem;
+    outline-width: 0px;
+    background-color: transparent;
+    font-size: 14px;
+    font-family: inherit;
+}
+.header__middle {
+    height: 100%;
+}
+.header__option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 40px;
+    position: relative;
+}
+
+.header__option--active {
+    position: relative;
+}
+
+.header__option--active::before {
+    content: '';
+    height: 4px;
+    width: 100%;
+    bottom: 0;
+    bottom: -5px;
+    background-color: var(--facebook-color);
+    display: block;
+    position: absolute;
+    right: 0;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    
+}
+
+.header__option:hover {
+    background-color: #eff2f5;
+    border-radius: 10px;
+    border-bottom: none;
+    align-items: center;
+}
+
+.header__option > .MuiSvgIcon-root {
+    color: gray;
+    font-size: 30px;
+}
+
+.header__option:hover > .MuiSvgIcon-root, .header__option--active > .MuiSvgIcon-root {
+    color: var(--facebook-color);
+}
+
+.header__info {
+    display: flex;
+    align-items: center;
+}
+
+.header__info > h4 {
+    margin: 0 10px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.header__icon.MuiIconButton-root:not(:last-child) {
+    margin-right: 7px;
+}
+.header__icon.MuiIconButton-root  {
+    background: #eff2f5;
+}

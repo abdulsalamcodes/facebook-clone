@@ -1,0 +1,78 @@
+.post {
+    background-color: white;
+    margin: 1rem 0;
+    border-radius: 20px;
+    box-shadow: 0 5px 7px -7px rgba(0, 0, 0, 0.75);
+    width: 100%;
+}
+
+.post__top {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+}
+
+.post__userInfo {
+    margin-left: 10px;
+}
+
+.post__userInfo h3 {
+    font-size: medium;
+    text-transform: capitalize;
+}
+
+.post__userInfo p {
+    font-size: 12px;
+    color: gray;
+}
+
+.post__message, .post__comment {
+    color: #333333;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    margin: 10px 0;
+}
+
+.post__comment p {
+    font-size: 14px;
+}
+.post__image>img {
+    width: 100%;
+    /* max-height: 300px; */
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+
+.post__options {
+    padding: 10px 15px 15px;
+    border-top: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: gray;
+
+
+
+}
+.post__option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+
+.post__option.active {
+    color: var(--facebook-color);
+}
+.post__option > p {
+    margin-left: 10px;
+}
+
+.post__option:hover {
+    background-color: #eff2f5;
+    border-radius: 10px;
+}

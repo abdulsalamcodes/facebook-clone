@@ -1,0 +1,26 @@
+.storyReel {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    position: relative;
+    margin-top: 1rem;
+}
+
+.storyReel__controller {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+    right: -25px;
+    top: 40%;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.21);
+    transition: background-color .3s ease-in-out;
+    outline-width: 0;
+}
+
+.storyReel__controller:hover {
+    background-color: var(--grey-color);
+}
