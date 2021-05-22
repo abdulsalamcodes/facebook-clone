@@ -24,3 +24,10 @@
 .storyReel__controller:hover {
     background-color: var(--grey-color);
 }
+
+@media (max-width: 500px) {
+    .storyReel {
+        max-width: 100px;
+        overflow-x: hidden;
+    }
+}

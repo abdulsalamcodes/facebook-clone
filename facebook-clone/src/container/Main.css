@@ -4,3 +4,10 @@
     background-color: rgb(240, 242, 245);
     position: relative;
 }
+
+@media (max-width: 500px) {
+    .main_body {
+        flex-direction: column;
+    }    
+}
+

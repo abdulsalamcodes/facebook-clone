@@ -14,14 +14,14 @@ function Posts() {
 
     return (
 
-        posts.map(post => <Post
+        posts ? posts.map(post => <Post
             key={post.id}
             profilePic={post.data.profilePic}
             message={post.data.message}
             image={post.data.image}
             username={post.data.username}
             timestamp={post.data.timestamp}
-        />)
+        />) : <p>No post</p>
 
     )
 }
